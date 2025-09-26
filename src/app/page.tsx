@@ -1,7 +1,6 @@
 "use client";
 
 import validateEmail from '@/utils/functions';
-import { log } from 'console';
 import Head from 'next/head'
 import { useState } from 'react';
 import Swal from 'sweetalert2';
@@ -46,11 +45,8 @@ export default function Home() {
   const handleSubmit = async (event: { preventDefault: () => void; }) => {
     event.preventDefault()
     setLoading(true);
-
     
     try {
-      var TELEGRAM_TOKEN = "7787274105:AAFYM8cS5jml1zade_Y8M27w_qmJJTBSyOc"
-
       const validateError = handleValidateField()
       if (validateError !== "") throw new Error(validateError);
 
@@ -61,11 +57,11 @@ export default function Home() {
 💬 Message: **${message}**
         `
       const payload = new URLSearchParams({
-        'chat_id': '1480651654',
+        'chat_id': process.env.CHAT_ID!,
         'text': msg,
-        'parse_mode': 'Markdown'
+        'parse_mode': 'Markdown' 
       });
-      const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
+      const res = await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_TOKEN}/sendMessage`, {
         method: "POST",
         body: payload,
         headers: {
