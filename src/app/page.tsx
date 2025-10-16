@@ -49,12 +49,12 @@ export default function Home() {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded' // Opcional, pero explícito ayuda
         },
-      // Timeout de 5s como en tu Python original (usa AbortController)
+        // Timeout de 5s como en tu Python original (usa AbortController)
         signal: AbortSignal.timeout(5000)
       })
       
       if (!res.ok) {
-        const errorText = await res.text(); // Loguea el error detallado de Telegram
+        // const errorText = await res.text(); // Loguea el error detallado de Telegram
         Swal.fire("Error al enviar el mensaje.");
         return;
       }
