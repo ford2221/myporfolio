@@ -5,6 +5,7 @@ import {projects, skills, languages, hobbies, workExperience, cvs} from '@/utils
 import Head from 'next/head'
 import { useState } from 'react';
 import Swal from 'sweetalert2';
+import Image from 'next/image';
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -31,7 +32,7 @@ export default function Home() {
         throw new Error(validateError)
       }
 
-      var msg = `
+      const msg = `
         🚨 **Mensaje Recibido** 🚨\n
 👤 Nombre: **${name}**,
 📧 Email: **${email},**
@@ -42,7 +43,7 @@ export default function Home() {
         'text': msg,
         'parse_mode': 'Markdown' 
       });
-      let token_telegram = process.env.NEXT_PUBLIC_TELEGRAM_TOKEN;
+      const token_telegram = process.env.NEXT_PUBLIC_TELEGRAM_TOKEN;
       const res = await fetch(`https://api.telegram.org/bot${token_telegram}/sendMessage`, {
         method: "POST",
         body: payload,
@@ -77,7 +78,6 @@ export default function Home() {
       <Head>
         <title>Portafolio — Estilo Noventero / 2000s</title>
         <meta name="description" content="Portafolio retro creado con Next.js y TailwindCSS - modo oscuro fijo" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
       </Head>
 
@@ -85,10 +85,11 @@ export default function Home() {
         <div className="max-w-5xl mx-auto p-4 sm:p-6">
           <header>
             <div className="flex md:items-center justify-center  gap-4 flex-wrap mb-4">
-              <img
+              <Image
                 src="/profile.png"
                 alt="Foto de perfil"
                 className="w-32 h-32 rounded-full border-2 border-pink-500 shadow-lg object-cover"
+                width={120} height={120}
               />
               <div className='w-64 md:w-2/3'>
                 <h1 className="text-xl text-center md:text-left sm:text-2xl font-bold tracking-widest leading-none" style={{ fontFamily: 'Inter, system-ui' }}>Ford-Ndji Joseph</h1>
@@ -134,7 +135,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <a href="#contact" className="px-4 py-2 hover:cursor-pointer border-1 border-pink-700 text-white rounded-md text-sm font-semibold hover:brightness-110 self-start sm:self-auto hover:scale-105 transition delay-150 duration-300 ease-in-out">Contactar</a> */}
           </header>
 
           <section className="mb-8">
