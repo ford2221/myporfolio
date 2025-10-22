@@ -47,3 +47,9 @@ export const workExperience = [
 ]
 
 export const personalAtt = ["Creative", "Detail-oriented", "Team Player", "Self-learner", "Passionate about innovation"]
+
+export const cvs = [
+    {name: "🇺🇸 CV EN", pdf: "/Ford_ndji_joseph_cv.pdf"},
+    {name: "🇪🇸 CV ES", pdf: "/Ford_ndji_joseph_cv_es.pdf"},
+    {name: "🇫🇷 CV FR", pdf: "/Ford_ndji_joseph_cv_fr.pdf"},
+]

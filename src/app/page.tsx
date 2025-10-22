@@ -1,7 +1,7 @@
 "use client";
 
 import validateEmail from '@/utils/functions';
-import {projects, skills, languages, hobbies, workExperience} from '@/utils/consts';
+import {projects, skills, languages, hobbies, workExperience, cvs} from '@/utils/consts';
 import Head from 'next/head'
 import { useState } from 'react';
 import Swal from 'sweetalert2';
@@ -90,7 +90,7 @@ export default function Home() {
                 alt="Foto de perfil"
                 className="w-32 h-32 rounded-full border-2 border-pink-500 shadow-lg object-cover"
               />
-              <div className='w-64 md:w-auto'>
+              <div className='w-64 md:w-2/3'>
                 <h1 className="text-xl text-center md:text-left sm:text-2xl font-bold tracking-widest leading-none" style={{ fontFamily: 'Inter, system-ui' }}>Ford-Ndji Joseph</h1>
                 <p className="text-xs opacity-80 text-center md:text-left mt-1 tracking-widest leading-none">Desarrollador web & móvil • Portafolio retro</p>
                 <ul className="space-y-1 text-sm ">
@@ -122,6 +122,14 @@ export default function Home() {
                 <div className="mt-4 flex flex-wrap gap-2">
                   {skills.map(skill => (
                     <span key={skill} className="text-[11px] px-2 py-1 rounded bg-black/50 border border-slate-500/30 hover:cursor-pointer hover:scale-105 transition delay-150 duration-300 ease-in-out">{skill}</span>
+                  ))}
+                </div>
+                <h3 className="text-lg sm:text-xl font-bold my-2">📄 My CVs</h3>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {cvs.map((cv, i) => (
+                    <div key={i}>
+                      <a target='_blank' href={cv.pdf} className="text-[11px] px-2 py-1 rounded bg-black/50 border border-slate-500/30 hover:cursor-pointer hover:scale-105 transition delay-150 duration-300 ease-in-out">{cv.name}</a>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -180,8 +188,8 @@ export default function Home() {
           <section id="projects" className="mb-12">
             <h3 className="text-lg sm:text-xl font-bold mb-4">🖥️ Proyectos</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {projects.map(p => (
-                <a target='_blank' href={p.link}  key={p.id} className="p-4 rounded-lg border border-slate-700/40 bg-gradient-to-br from-slate-900/50 to-slate-800/30 hover:scale-[1.01] transition-transform">
+              {projects.map((p, i) => (
+                <a target='_blank' key={i} href={p.link}   className="p-4 rounded-lg border border-slate-700/40 bg-gradient-to-br from-slate-900/50 to-slate-800/30 hover:scale-[1.01] transition-transform">
                   <div className="flex items-start justify-between">
                     <div>
                       <h4 className="font-semibold" style={{ fontFamily: 'Press Start 2P, monospace' }}>{p.title}</h4>
