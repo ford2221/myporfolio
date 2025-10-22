@@ -35,7 +35,7 @@ export const skills = ['Flask', 'Express.js', 'Next.js', 'Git', 'Integración de
 
 export const languages = [
     { name: 'Haitian Creole (Native)', level: 100 },
-    { name: 'French', level: 100 },
+    { name: 'French', level: 90 },
     { name: 'English (Intermediate-Advanced)', level: 75 },
     { name: 'Spanish (Fluent)', level: 90 },
 ]
