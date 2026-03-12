@@ -101,7 +101,7 @@ export default function Home() {
                     </span>
                     <a href="mailto:fordstelle@gmail.com" className="text-xs text-pink-400 hover:underline tracking-widest leading-none">fordstelle@gmail.com</a>
                   </li>
-                  <li className="flex items-center text-center md:text-left">
+                  {/* <li className="flex items-center text-center md:text-left">
                     <span className="mr-3">
                       📱
                     </span>
@@ -112,7 +112,7 @@ export default function Home() {
                       📍
                     </span>
                     <span className="text-slate-300 font-mono tracking-widest leading-none">Acarigua, Venezuela</span>
-                  </li>
+                  </li> */}
                 </ul>
                 <div className="mt-2">
                   <div className="flex space-x-4 tracking-widest leading-none" style={{ fontFamily: 'Inter, system-ui' }}>
