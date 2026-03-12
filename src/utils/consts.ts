@@ -55,6 +55,7 @@ export const hobbies = ['📚 Leer', '☕ Tomar té y café', '🏋️‍♂️ 
 export const workExperience = [
     { company: 'CorpoEureka', period: 'Jul 2022 - Jul 2023 (1 year)', role: 'Fullstack Developer (Odoo ERP)' },
     { company: 'KM NET', period: 'Aug 2023 - Sep 2025 (2 years)', role: 'Frontend & Mobile App Developer' },
+    { company: 'Université Quisqueya"', period: 'Nov 2025 - Still now', role: 'Fullstack Developer (Odoo ERP)' },
 ]
 
 export const personalAtt = ["Creative", "Detail-oriented", "Team Player", "Self-learner", "Passionate about innovation"]
