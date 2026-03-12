@@ -211,9 +211,9 @@ export default function Home() {
 
           <section id="contact" className="mb-24 grid grid-cols-1 md:grid-cols-2 gap-6">
             <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4">
-              <input required value={name} onChange={(e) => setName(e.target.value)} type='text' placeholder="Nombre" className="p-3 rounded border border-slate-600/50 bg-transparent" />
-              <input required value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder="Correo" className="p-3 rounded border border-slate-600/50 bg-transparent" />
-              <textarea required value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Mensaje" className="p-3 rounded border border-slate-600/50 bg-transparent" rows={4} />
+              <input required value={name} onChange={(e) => setName(e.target.value)} type='text' placeholder="Name" className="p-3 rounded border border-slate-600/50 bg-transparent" />
+              <input required value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder="Email" className="p-3 rounded border border-slate-600/50 bg-transparent" />
+              <textarea required value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message" className="p-3 rounded border border-slate-600/50 bg-transparent" rows={4} />
               <button onClick={handleSubmit} type="submit" className="px-4 py-3 rounded border border-pink-600 text-white font-semibold hover:cursor-pointer hover:scale-105 transition delay-150 duration-300 ease-in-out" >Enviar</button>
               {loading && (
                 <div className="flex justify-center items-center mt-4">

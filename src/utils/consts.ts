@@ -51,7 +51,7 @@ export const languages = [
     { name: 'Spanish (Fluent)', level: 90 },
 ]
 
-export const hobbies = ['📚 Leer', '☕ Tomar té y café', '🏋️‍♂️ Ir al gimnasio', '🎌 Ver animes']
+export const hobbies = ['📚 Read', '☕ Tea and Coffee', '🏋️‍♂️ Gym', '🎌 Watch animes']
 export const workExperience = [
     { company: 'CorpoEureka', period: 'Jul 2022 - Jul 2023 (1 year)', role: 'Fullstack Developer (Odoo ERP)' },
     { company: 'KM NET', period: 'Aug 2023 - Sep 2025 (2 years)', role: 'Frontend & Mobile App Developer' },
