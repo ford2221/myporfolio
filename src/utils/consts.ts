@@ -3,7 +3,8 @@ export const projects = [
     { id: 2, title: '• ChatBot Ai', desc: 'Built a chatbot app using Gemini AI API with local chat history and conversation tracking.', tags: ['Flutter', 'Dart', "Gemini", "SQLite"], 'link': 'https://www.linkedin.com/posts/ford-ndji-joseph-7a62531a8_flutter-voiceassistant-gemini-ugcPost-7352013841272061952-XrDY?utm_source=share&utm_medium=member_desktop' },
     { id: 3, title: '• Ai Assistent', desc: 'Flutter + Gemini + Speech_to_text - Jarvis Style', tags: ['Flutter', 'Gemini'], 'link': 'https://www.linkedin.com/posts/ford-ndji-joseph-7a62531a8_flutter-voiceassistant-gemini-ugcPost-7352013841272061952-XrDY?utm_source=share&utm_medium=member_desktop' },
     { id: 4, title: '• Crunchyroll clone', desc: 'Developed a full Crunchyroll clone app replicating modern streaming UI and navigation features.', tags: ['Flutter', 'Dart'], 'link': 'https://www.linkedin.com/posts/ford-ndji-joseph-7a62531a8_flutter-widget-ui-ugcPost-7366205762789904387-WVPa?utm_source=share&utm_medium=member_desktop' },
-    { id: 4, title: '• Stripe Payment App', desc: 'Flutter app with Stripe integration for online payments and transaction management.', tags: ['Flutter', 'Dart'], 'link': 'https://www.linkedin.com/posts/ford-ndji-joseph-7a62531a8_flutter-widget-ui-ugcPost-7366205762789904387-WVPa?utm_source=share&utm_medium=member_desktop' },
+    { id: 5, title: '• Stripe Payment App', desc: 'Flutter app with Stripe integration for online payments and transaction management.', tags: ['Flutter', 'Dart'], 'link': 'https://www.linkedin.com/posts/ford-ndji-joseph-7a62531a8_flutter-widget-ui-ugcPost-7366205762789904387-WVPa?utm_source=share&utm_medium=member_desktop' },
+    { id: 6, title: '• FilaActiva', desc: 'A sales and order management system for small vendors (still building it)', tags: ['Flutter', 'Dart', 'Supabase], 'link': '' },
 ]
 
 export const experiences = [
@@ -29,9 +30,19 @@ export const experiences = [
             "• Improved workflow automation and system integration across departments.",
         ]
     },
+    {
+        company: "Université Quisqueya", 
+        role: 'Fullstack Developer (Odoo ERP)',
+        period: 'Nov 2025 - still now',
+        tags: [
+            "• Developed modules and submodules for Odoo ERP (Products, Sales, Purchases, Invoicing).",
+            "• Supported development team with custom addons, functions, and Odoo migration.",
+            "• Improved workflow automation and system integration across departments.",
+        ]
+    },
 ]
 
-export const skills = ['Flask', 'Express.js', 'Next.js', 'Git', 'Integración de IA', 'Python', 'Flutter', 'Google Play Console','Html', "CSS","Javascript", "TypeScript" ,"Tailwind", "Firebase", "Supbase", "MongoDB", "Postgresql", "MySql"]
+export const skills = ['Flask', 'Express.js', 'Next.js', 'Git', 'Integración de IA', 'Python', 'Flutter', 'Google Play Console','Html', "CSS","Javascript", "TypeScript" ,"TailwindCss", "Firebase", "Supabase", "MongoDB", "Postgresql", "MySql"]
 
 export const languages = [
     { name: 'Haitian Creole (Native)', level: 100 },
