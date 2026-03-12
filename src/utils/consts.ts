@@ -4,7 +4,7 @@ export const projects = [
     { id: 3, title: '• Ai Assistent', desc: 'Flutter + Gemini + Speech_to_text - Jarvis Style', tags: ['Flutter', 'Gemini'], 'link': 'https://www.linkedin.com/posts/ford-ndji-joseph-7a62531a8_flutter-voiceassistant-gemini-ugcPost-7352013841272061952-XrDY?utm_source=share&utm_medium=member_desktop' },
     { id: 4, title: '• Crunchyroll clone', desc: 'Developed a full Crunchyroll clone app replicating modern streaming UI and navigation features.', tags: ['Flutter', 'Dart'], 'link': 'https://www.linkedin.com/posts/ford-ndji-joseph-7a62531a8_flutter-widget-ui-ugcPost-7366205762789904387-WVPa?utm_source=share&utm_medium=member_desktop' },
     { id: 5, title: '• Stripe Payment App', desc: 'Flutter app with Stripe integration for online payments and transaction management.', tags: ['Flutter', 'Dart'], 'link': 'https://www.linkedin.com/posts/ford-ndji-joseph-7a62531a8_flutter-widget-ui-ugcPost-7366205762789904387-WVPa?utm_source=share&utm_medium=member_desktop' },
-    { id: 6, title: '• FilaActiva', desc: 'A sales and order management system for small vendors (still building it)', tags: ['Flutter', 'Dart', 'Supabase], 'link': '' },
+    { id: 6, title: '• FilaActiva', desc: 'A sales and order management system for small vendors (still building it)', tags: ['Flutter', 'Dart', 'Supabase'], 'link': '' }
 ]
 
 export const experiences = [
