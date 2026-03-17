@@ -139,11 +139,11 @@ export default function Home() {
 
           <section className="mb-8">
             <h3 className="text-lg sm:text-xl font-bold mb-2">🎓 Education</h3>
-            <p className="text-sm opacity-90 ml-4">UPTP JJ Montilla, Portuguesa</p>
+            <p className="text-sm opacity-90 ml-4">UPTP JJ Montilla, Acarigua, Venezuela</p>
           </section>
 
           <section className="mb-8">
-            <h3 className="text-lg sm:text-xl font-bold mb-4">💼 Experiencia</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-4">💼 Experiences</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ml-4">
               {workExperience.map((job, i) => (
                 <div key={i} className="p-4 rounded-lg border border-slate-700/40 bg-gradient-to-br from-slate-900/50 to-slate-800/30 hover:scale-[1.01] transition-transform">
@@ -214,7 +214,7 @@ export default function Home() {
               <input required value={name} onChange={(e) => setName(e.target.value)} type='text' placeholder="Name" className="p-3 rounded border border-slate-600/50 bg-transparent" />
               <input required value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder="Email" className="p-3 rounded border border-slate-600/50 bg-transparent" />
               <textarea required value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message" className="p-3 rounded border border-slate-600/50 bg-transparent" rows={4} />
-              <button onClick={handleSubmit} type="submit" className="px-4 py-3 rounded border border-pink-600 text-white font-semibold hover:cursor-pointer hover:scale-105 transition delay-150 duration-300 ease-in-out" >Enviar</button>
+              <button onClick={handleSubmit} type="submit" className="px-4 py-3 rounded border border-pink-600 text-white font-semibold hover:cursor-pointer hover:scale-105 transition delay-150 duration-300 ease-in-out" >Send</button>
               {loading && (
                 <div className="flex justify-center items-center mt-4">
                     {/* <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div> */}
